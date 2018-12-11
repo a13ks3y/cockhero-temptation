@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    font-family: Helvetica, serif;
+}
+a, a:active, a:visited, a:hover {
+    text-decoration: none;
+}
+header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50%;
+    opacity: 0.777;
+    background: #f90;
+    z-index: 333;
+}
+header.hide {
+    top: -27rem;
+    transition: top, opacity;
+    transition-duration: 1s;
+
+}
+header.show {
+    top: 0;
+    transition: top, opacity;
+    transition-duration: 1s;
+}
+header h3 {
+    text-align: center;
+}
+#hamburger {
+    position: absolute;
+    left: 1.3rem;
+    top: 0.42rem;
+    font-size: 1.11rem;
+    color: #f90;
+    cursor: pointer;
+    background: #000;
+    width: 1.11rem;
+    height: 1.11rem;
+    user-select: none;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 1.21rem;
+    padding: 0.5rem;
+    margin: 0;
+    z-index: 666;
+}
+main {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+main iframe {
+    width: 100%;
+}
+
+#hint {
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.11rem;
+    display: block;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    background: #f90;
+    opacity: 0;
+}
+#hint button {
+    border: 1px solid black;
+    background: #f90;
+}
+#hint.show {
+    opacity: 0.999;
+    transition: opacity;
+    transition-duration: 6.666s;
+}
+#hint.hide {
+    opacity: 0;
+    transition: opacity;
+    transition-duration: 6.666s;
+}
+
+@media screen and (orientation:portrait) {
+    #hamburger {
+        font-size: 6.66rem;
+    }
+    main {
+        grid-template-columns: auto auto;
+    }
+}
