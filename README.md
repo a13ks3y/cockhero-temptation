@@ -1,6 +1,6 @@
 # CockHero Temptation
 ## Description
-Just a page with 4 embed [pornhub](https://pornhub.com) videos.
+Just a page with 4 embed [pornhub](https://pornhub.com) videos. You know the rules. [Enjoy](https://a13ks3y.github.io/cockhero-temptation/)
 ## Road Map
 * Add menu items and settings to the header. @todo: list menu items here.
 * Add eye tracking software (purpose: to detect which quoter of the screen
